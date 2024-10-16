@@ -16,7 +16,7 @@ shutil.copy(maskk, maskoutputss)
 
 repo = Repo(full_local_path)
 repo.git.add("-A")
-repo.index.commit("user_fakes")
+repo.index.commit(tgl)
 
 origin = repo.remote(name="origin")
 origin.push()
